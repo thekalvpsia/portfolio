@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+    background-color: #fff;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+}
+
+.home .profile-pic {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.home-text .intro {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.home-text h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.home-text .title {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.home-text .description {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #444;
+    margin-top: 10px;
+    max-width: 600px; /* Ensures it doesn't stretch too wide */
+}
+
+.home-text .location {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.button-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
