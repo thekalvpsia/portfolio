@@ -166,6 +166,7 @@ body {
     background-color: #fff;
     max-width: 400px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .education-box .education-icon {
@@ -184,4 +185,53 @@ body {
     font-size: 1.2em;
     color: #444;
     text-align: center;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.experience-box {
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 20px 40px;
+    background-color: #fff;
+    max-width: 450px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #555;
+}
+
+.experience-box ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+    justify-items: start;
+}
+
+.experience-box li {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.experience-box .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.experience-box li strong {
+    font-weight: bold;
 }
