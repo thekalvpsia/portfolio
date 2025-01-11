@@ -56,7 +56,7 @@ body {
 
 .section {
     text-align: center;
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 .section h2 {
@@ -234,4 +234,8 @@ body {
 
 .experience-box li strong {
     font-weight: bold;
+}
+
+#about {
+    margin-top: 0;
 }
