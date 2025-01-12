@@ -136,14 +136,14 @@ body {
 
 .button-row {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 15px 25px;
+    font-size: 0.9em;
     font-weight: 500;
     color: #000;
     background-color: #fff;
@@ -238,4 +238,61 @@ body {
 
 #about {
     margin-top: 0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures consistent spacing */
+    gap: 30px;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 0 60px;
+}
+
+.project-card {
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 30px 40px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-buttons .btn {
+    padding: 15px 25px;
+    font-size: 1em;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    min-width: 100px;
+    text-align: center;
+}
+
+.project-buttons .btn:hover {
+    background-color: #000;
+    color: #fff;
 }
