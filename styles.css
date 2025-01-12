@@ -328,6 +328,13 @@ body {
     color: #fff;
 }
 
+#projects .project-description {
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
 .contact-container {
     max-width: 600px;
     margin: 50px auto;
