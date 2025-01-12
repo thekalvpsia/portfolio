@@ -237,23 +237,38 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 30px;
-    justify-items: start;
 }
 
 .experience-box li {
-    font-size: 1.2em;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.experience-box .icon {
+.icon-wrapper {
+    flex-shrink: 0;
+}
+
+.icon {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
 }
 
-.experience-box li strong {
+.tech-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-wrapper strong {
+    font-size: 1.2em;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-level {
+    font-size: 0.9em;
+    color: #777;
+    font-style: italic;
 }
 
 #about {
