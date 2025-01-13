@@ -487,3 +487,16 @@ body {
         transform: translateY(0);
     }
 }
+
+.btn.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #999;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.btn.disabled:hover {
+    background-color: #f0f0f0;
+    color: #999;
+}
