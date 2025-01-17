@@ -272,10 +272,6 @@ body {
     font-style: italic;
 }
 
-#about {
-    margin-top: 0;
-}
-
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures consistent spacing */
@@ -316,6 +312,10 @@ body {
     font-size: 1.7em;
     margin-bottom: 20px;
     color: #000;
+}
+
+.project-card p {
+    text-align: center;
 }
 
 .project-buttons {
@@ -499,4 +499,113 @@ body {
 .btn.disabled:hover {
     background-color: #f0f0f0;
     color: #999;
+}
+
+/* General Mobile Styling */
+@media (max-width: 768px) {
+    /* Remove Sidebar */
+    .sidebar {
+        display: none;
+    }
+
+    /* Adjust Content Width */
+    .content {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    /* Mobile Header */
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hamburger-menu span {
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .mobile-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .mobile-nav ul li {
+        margin: 10px 0;
+    }
+
+    .mobile-nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+
+    /* Move Profile Picture to Top */
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .profile-pic {
+        margin-bottom: 20px;
+        width: 150px;
+        height: 150px;
+        margin-right: 0px;
+    }
+
+    .home-text p {
+        text-align: center;
+    }
+
+    /* Adjust Spacing and Fonts */
+    .section {
+        padding: 20px 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .button-row {
+        justify-content: center;
+        align-items: center;
+    }
 }
