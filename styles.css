@@ -609,3 +609,9 @@ body {
         align-items: center;
     }
 }
+
+@media (min-width: 769px) {
+    .mobile-header {
+        display: none;
+    }
+}
