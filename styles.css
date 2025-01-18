@@ -608,6 +608,47 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .projects-container {
+        display: flex; /* Use flexbox to align projects in a row */
+        gap: 20px;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 10px;
+        scroll-snap-type: x mandatory;
+        justify-content: flex-start;
+    }
+
+    .project-card {
+        flex: 0 0 auto; /* Ensure cards don’t shrink and maintain their size */
+        width: 80%;
+        scroll-snap-align: center;
+        padding: 15px 20px;
+        box-shadow: none;
+        transition: none;
+    }
+
+    .project-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .project-card:hover .project-image {
+        transform: none;
+    }
+
+    .projects-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-card .btn {
+        padding: 8px 15px;
+        font-size: 0.85em;
+        min-width: 80px;
+    }
+
+    .project-buttons {
+        gap: 10px;
+    }
 }
 
 @media (min-width: 769px) {
