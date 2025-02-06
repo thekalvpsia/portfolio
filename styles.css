@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 6px 0 12px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar nav ul {
@@ -40,7 +41,7 @@ body {
 
 .sidebar-link {
     text-decoration: none;
-    color: #777;
+    color: #000;
     font-size: 1.2em;
     padding: 10px 20px;
     border-radius: 10px;
@@ -107,6 +108,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 30px;
+    box-shadow: 6px 0 12px rgba(0, 0, 0, 0.15);
 }
 
 .home-text .intro {
