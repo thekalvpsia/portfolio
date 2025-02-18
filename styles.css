@@ -67,6 +67,14 @@ body {
 .section {
     text-align: center;
     margin: 100px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section h2 {
@@ -626,13 +634,12 @@ body {
         width: 80%;
         scroll-snap-align: center;
         padding: 15px 20px;
-        box-shadow: none;
         transition: none;
     }
 
     .project-card:hover {
         transform: none;
-        box-shadow: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .project-card:hover .project-image {

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll(".sidebar-link");
+    const sections = document.querySelectorAll(".section");
 
     links.forEach(link => {
         link.addEventListener("click", function () {
@@ -7,6 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.style.overflow = "auto"; // Restore scrolling
         });
     });
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible"); // Add the visible class
+                    observer.unobserve(entry.target); // Stop observing after animation runs
+                }
+            });
+        },
+        { threshold: 0.3 } // Trigger when 30% of the section is visible
+    );
+
+    sections.forEach(section => observer.observe(section));
 });
 
 document.getElementById("hamburger").addEventListener("click", function () {
